@@ -205,7 +205,7 @@ location ~ /#!# WP_CONTENT_URI #!#/cache/wp-rocket/.*_gzip$ {
 	add_header Content-Encoding gzip;
 	add_header Vary "Accept-Encoding, Cookie";
 	add_header Cache-Control "#!# HTML_CACHE_CONTROL #!#";
-  add_header X-Orion-Serving-Static $rocket_is_bypassed;
+  	add_header X-Orion-Serving-Static $rocket_is_bypassed;
 	add_header X-Orion-Reason $rocket_reason;
 	add_header X-Orion-File $rocket_file;
 	add_header X-Orion-Nginx-Device $rocket_device;
